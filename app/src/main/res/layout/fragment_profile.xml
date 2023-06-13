@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/create_title"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            style="@style/edit_text_layout"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:startIconTint="#91B4FC"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profilename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_full_name"
+                android:textSize="14sp"
+                android:inputType="text"
+                style="@style/edit_text"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+            style="@style/edit_text_layout"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:startIconTint="#91B4FC"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profiledob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_of_birth"
+                android:textSize="14sp"
+                android:inputType="date"
+                style="@style/edit_text"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            style="@style/edit_text_layout"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_name_layout" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email2"
+                android:textSize="14sp"
+                style="@style/edit_text"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/ic_baseline_edit_24"
+            style="@style/edit_text_layout"
+            android:layout_marginTop="15dp"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_email_layout" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profilepincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:textSize="14sp"
+                style="@style/edit_text"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            style="@style/edit_text_layout"
+            android:layout_marginTop="15dp"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/create_email_layout" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profilestate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:textSize="14sp"
+                style="@style/edit_text"
+                android:inputType="textLongMessage"
+
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:boxStrokeColor = "#91B4FC"
+            app:hintTextColor="#91B4FC"
+            app:startIconDrawable="@drawable/ic_baseline_add_location_24"
+            style="@style/edit_text_layout"
+            android:layout_marginTop="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profileaddress"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/address_1"
+                android:textSize="14sp"
+                style="@style/edit_text"
+                android:inputType="textLongMessage"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/edit"
+                android:background="@drawable/back_bg5"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="@string/edit"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                />
+            <Button
+                android:id="@+id/save"
+                android:background="@drawable/back_bg5"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>

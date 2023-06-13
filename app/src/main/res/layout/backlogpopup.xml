@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#91B4FC"
+    android:layout_height="match_parent">
+
+     <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="18dp"
+    app:cardCornerRadius="10dp"
+    >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingHorizontal="10dp"
+             android:paddingVertical="15dp"
+
+             android:orientation="vertical">
+    <TextView
+        android:id="@+id/Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register for backlog"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+       app:boxStrokeWidth="2dp"
+        app:hintTextColor="#FF8C00"
+        app:startIconDrawable="@drawable/ic_baseline_subject_24"
+        style="@style/edit_text_layout"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="#FF8C00"
+        app:startIconTint="#FF8C00"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:textSize="14sp"
+
+            android:inputType="text"
+            android:textColor="@color/black"
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="#FF8C00"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+        style="@style/edit_text_layout"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="#FF8C00"
+        app:startIconTint="#FF8C00"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateofexam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/save"
+
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+         </LinearLayout>
+     </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

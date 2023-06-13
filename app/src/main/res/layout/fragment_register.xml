@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="20dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Register">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/backlogrecycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:listitem="@layout/backlog_subject_holder_layout"/>
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:paddingHorizontal="15dp"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/create_title"-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Registration for backlog"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="22dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    app:startIconDrawable="@drawable/ic_baseline_person_24"-->
+<!--                    style="@style/edit_text_layout"-->
+<!--                    app:boxStrokeColor = "#FF8C00"-->
+<!--                    app:hintTextColor="#FF8C00"-->
+<!--                    app:startIconTint="#FF8C00"-->
+<!--                    >-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/profilename"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Name"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:inputType="text"-->
+
+<!--                        android:textColor="@color/black"-->
+<!--                        tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/cdob"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    app:startIconDrawable="@drawable/ic_baseline_date_range_24"-->
+<!--                    style="@style/edit_text_layout"-->
+<!--                    app:boxStrokeColor = "#FF8C00"-->
+<!--                    app:hintTextColor="#FF8C00"-->
+<!--                    app:startIconTint="#FF8C00"-->
+<!--                    >-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/profiledob"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Exam Date"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:inputType="date"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:boxStrokeColor = "#FF8C00"-->
+<!--                    app:hintTextColor="#FF8C00"-->
+<!--                    app:startIconDrawable="@drawable/ic_baseline_email_24"-->
+<!--                    style="@style/edit_text_layout"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    app:startIconTint="#FF8C00"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/create_name_layout" >-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/profileemail"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Subject"-->
+<!--                        android:textSize="14sp"-->
+
+<!--                        android:inputType="textEmailAddress"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:boxStrokeColor = "#FF8C00"-->
+<!--                    app:hintTextColor="#FF8C00"-->
+<!--                    app:startIconDrawable="@drawable/ic_pincode"-->
+<!--                    style="@style/edit_text_layout"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    app:startIconTint="#FF8C00"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/create_name_layout" >-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/pincode"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Year"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:maxLength="6"-->
+<!--                        android:inputType="number"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:boxStrokeColor = "#FF8C00"-->
+<!--                    app:hintTextColor="#FF8C00"-->
+<!--                    app:startIconDrawable="@drawable/ic_baseline_add_location_24"-->
+<!--                    style="@style/edit_text_layout"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    app:startIconTint="#FF8C00"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/create_password_layout" >-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/profileaddress"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:hint="Address"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:inputType="textLongMessage"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        tools:ignore="TouchTargetSizeCheck" />-->
+
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <Button-->
+<!--                        android:id="@+id/save"-->
+
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="56dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:text="Save"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+
+<!--                        />-->
+<!--                    <Button-->
+<!--                        android:id="@+id/edit"-->
+
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="56dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:text="Edit"-->
+
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:elevation="18dp"
+        android:backgroundTint="#91B4FC"
+        app:fabSize="normal"
+        android:contentDescription="TODO">
+
+
+
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</FrameLayout>

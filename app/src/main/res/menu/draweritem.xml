@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <group android:checkableBehavior="single">
+
+
+ <item android:id="@+id/profile"
+     android:title="Profile"
+     android:icon="@drawable/ic_baseline_account_circle_24"/>
+     <item android:id="@+id/tl"
+         android:title="Teacher On Leave"
+         android:icon="@drawable/ic_baseline_time_to_leave_24"/>
+ </group>
+ <item android:title="communicate">
+     <menu>
+ <item android:id="@+id/share"
+  android:title="Call Us"
+android:icon="@drawable/ic_baseline_share_24"/>
+
+     </menu>
+ </item>
+</menu>

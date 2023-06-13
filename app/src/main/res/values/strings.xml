@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Backlog Registration</string>
+    <string name="registration">Backlog Registration</string>
+    <string name="backlogs">Subjects</string>
+    <string name="complain">RMS-query</string>
+    <string name="feedback">Feedback</string>
+    <string name="rules">Rules</string>
+
+    <string name="alredy_have_and_account">Forget your password ?<font color="#694004"> Reset</font></string>
+    <string name="already">Already have an account ?<font color="#ffffff"> Login</font></string>
+    <string name="create">Dont\'t have account ?<font color="#ffffff"> Sign-In</font></string>
+    <string name="hello">Hello!  </string>
+    <string name="we_resolve_your_query">We resolve your query</string>
+
+    <style name="curved">
+        <item name="cornerSize">20%</item>
+
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ap">Rms_Query</string>
+    <string name="message">Message Type</string>
+    <string-array name="spinner">
+
+        <item>Assistance</item>
+        <item>Enquiry</item>
+        <item>Feedback</item>
+    </string-array>
+    <string-array name="spinner2" hint="select">
+
+        <item>Acedemics</item>
+        <item>Administrative office(student)</item>
+        <item>Admission</item>
+        <item>Examination</item>
+        <item>Library</item>
+    </string-array>
+    <string-array name="spinner3" hint="select">
+
+        <item>CSE</item>
+        <item>MBA</item>
+        <item>Mechanical</item>
+        <item>Arts</item>
+        <item>Electrical</item>
+    </string-array>
+    <string name="company_logo">Company Logo</string>
+    <string name="login_to_app">Login to app</string>
+    <string name="login_if_you_have_an_account">Login If you have an account !</string>
+    <string name="login_email">Login_email</string>
+    <string name="email2">Email</string>
+    <string name="password">Password</string>
+    <string name="email">Email or Username</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="i_don_t_have_and_account"><font color="#808080">I don\'t have an account?</font><font color="#d580ff"><b> Register</b></font>
+    </string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="register_to_get_started_with_the_app">Register to get started with the app !!</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="your_username">Your username</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account"><font color="#808080">Already have an account?</font><font color="#d580ff"><b>Login</b></font>
+    </string>
+    <string name="welcome">Welcome</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="logout">Logout</string>
+    <string name="get_your_service_now">Get Your Service Now</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="orders">Orders</string>
+    <string name="account">Account</string>
+    <string name="categories">Categories</string>
+    <string name="membership">Membership</string>
+    <string name="categoriesh">Categories</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_account">My Account</string>
+    <string name="help_center">Help Center</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="legal">Legal</string>
+    <string name="name">Name</string>
+    <string name="exit">Exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="address_1">Address 1</string>
+    <string name="address_2">Address 2</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="state">State</string>
+    <string name="servisoo_plus_zone">ServiSoo Plus Zone</string>
+    <string name="your_wallet">Your Wallet</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="reviews">Reviews</string>
+    <string name="question_amp_answer"><![CDATA[Question & Answer]]></string>
+    <string name="become_contractor">Become Contractor</string>
+</resources>

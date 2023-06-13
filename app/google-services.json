@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442150435628",
+    "project_id": "hefi-7b02d",
+    "storage_bucket": "hefi-7b02d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442150435628:android:a3872f6d9ac0f847fb4a89",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442150435628-chmdqfbd66i2g5r61c7afda3vce56ak7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMxb_2YIcmXFMNHE-Hh6jf5f2JKKFOBhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442150435628-chmdqfbd66i2g5r61c7afda3vce56ak7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

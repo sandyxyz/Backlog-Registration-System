@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="18dp"
+        app:cardCornerRadius="10dp"
+      >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:background="#B7CDF9"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/purple_500"/>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-75dp"
+                android:background="@drawable/rouund"
+                android:padding="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rouund2"/>
+
+                <ImageView
+                    android:id="@+id/emoji"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="25dp"
+                    android:src="@drawable/z3" />
+
+
+
+
+
+
+            </RelativeLayout>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Please Give Your Feedback"
+     android:textSize="14sp"
+     android:textStyle="bold"
+     android:layout_marginTop="8dp"
+     android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:rating="3"
+                android:theme="@style/ratingbar"
+
+               >
+
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:paddingVertical="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/laterbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Later"
+                    android:textAllCaps="false"
+
+                    android:textColor="#CC000000"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/rouund3"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ratenow"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Rate Now"
+                    android:minLines="1"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:paddingHorizontal="20dp"
+
+                    android:background="@drawable/rouund4"/>
+
+
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
